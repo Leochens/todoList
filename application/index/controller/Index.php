@@ -10,8 +10,8 @@ class Index extends Controller
     public function index()
     {
         $res = Db::table('todos')->select();
- 
-        return json($res);
+        
+        return json_encode($res);
     }
     public function login(){
 

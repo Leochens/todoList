@@ -11,11 +11,11 @@ class Index extends Controller
     {
         $res = Db::table('todos')->select();
         
-        return json_encode($res);
+        return json($res);
     }
-    public function login(){
+    public function login(){    
 
-    }
+    }   
     public function addTodo()
     {
        if(!input('?get.content')||!input('?get.isCompleted'))//检测是否存在

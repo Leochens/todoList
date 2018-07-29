@@ -11,7 +11,7 @@ class Index extends Controller
     {
         $res = Db::table('todos')->select();
         
-        return json($res);
+        return $res;
     }
     public function login(){    
 

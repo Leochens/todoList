@@ -11,7 +11,7 @@ class Index extends Controller
     {
         $res = Db::table('todos')->select();
         
-        return $res;
+        return json($res);
     }
     public function login(){    
 
@@ -40,5 +40,10 @@ class Index extends Controller
     }
     public function completeTodo(){
 
+    }
+    public function test(){
+        $res = Db::table('todos')->select();
+        
+        return json($res);        
     }
 }
